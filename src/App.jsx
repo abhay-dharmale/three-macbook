@@ -6,6 +6,12 @@ import MacContainer from "./MacContainer";
 
 const App = () => {
   return (
+    <div className="w-full h-screen relative">
+    <div className="absolute top-10 left-1/2 -translate-x-1/2 text-white flex flex-col items-center justify-center">
+      <h4 className="masked-text text-6xl">macbook pro.</h4>
+      <p className="text-zinc-100">so prooo!</p>
+      <p className="text-center mt-3 text-xs px-20 text-zinc-500">dolor sit amet, consectetur adipiscing elit. Aenean pellentesque lorem at dignissim placerat. Nullam eu ligula nec elit euismod sollicitudin. Proi</p>
+    </div>
     <Canvas camera={{ fov: 20, position: [0, 0, 100] }}>
       {/* <OrbitControls /> */}
       <Environment
@@ -17,6 +23,7 @@ const App = () => {
         <MacContainer />
       </ScrollControls>
     </Canvas>
+    </div>
   );
 };
 

@@ -8,3 +8,19 @@ html, body{
     height: 100%;
     background-color: #000;
 }
+
+/* Add this to your app.css */
+.masked-text {
+  font-size: 5rem; /* This matches the text-5xl */
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff8a00, #e52e71, #9a47ff); /* Gradient colors */
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari compatibility */
+  color: transparent;
+  display: inline-block;
+  background-image: url('https://i.pinimg.com/236x/a9/80/22/a98022cdb8b339e11542132b6428ac92.jpg'); /* Image mask */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-text-fill-color: transparent; /* Ensure text is transparent for the image to show */
+}
