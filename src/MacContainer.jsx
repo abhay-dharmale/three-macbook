@@ -31,7 +31,7 @@ const MacContainer = () => {
     // Make the model responsive
     const scaleFactor = Math.min(viewport.width / size.width, viewport.height / size.height);
     if (groupRef.current) {
-      groupRef.current.scale.setScalar(scaleFactor * 9);  // Adjust this scalar for sensitivity
+      groupRef.current.scale.setScalar(scaleFactor * 13);  // Adjust this scalar for sensitivity
     }
   });
 
